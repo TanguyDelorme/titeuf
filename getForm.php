@@ -133,26 +133,6 @@ $matiere, $certificat, $aspect, $signe, $numerote, $packaging, $hauteur, $horsCo
 $largeur, $profondeur, $cote, $dateModifCote, $cotePerso, $origineCote]);
 
 
-
-
-$reponse =  $bdd->query("SELECT seriesTitre, numero, albumTitre, categorie, idDessinateur,
-idScenariste, idColoriste, prixVente, editeur, editionOriginale, image, descriptif, reference,
-depotLegal, dateSortie, dateImpression, commentaire, image2, image3, image4, nbPages, matiere,
-certificat, aspect, signe, numerote, packaging, hauteur, horsCommerce, largeur, profondeur, cote,
-dateModifCote, cotePerso, origineCote FROM comicstable");
-
-$req = $bdd->prepare('INSERT INTO comicstable(seriesTitre, numero, albumTitre, categorie, idDessinateur,
-idScenariste, idColoriste, prixVente, editeur, editionOriginale, image, descriptif, reference,
-depotLegal, dateSortie, dateImpression, commentaire, image2, image3, image4, nbPages, matiere,
-certificat, aspect, signe, numerote, packaging, hauteur, horsCommerce, largeur, profondeur, cote,
-dateModifCote, cotePerso, origineCote)
-VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
-$req->execute([$seriesTitre, $numero, $albumTitre , $categorie, $idDessinateur, $idScenariste,
-$idColoriste, $prixVente, $editeur, $editionOriginale, $image, $descriptif, $reference,
-$depotLegal, $dateSortie, $dateImpression, $commentaire, $image2, $image3, $image4, $nbPages ,
-$matiere, $certificat, $aspect, $signe, $numerote, $packaging, $hauteur, $horsCommerce,
-$largeur, $profondeur, $cote, $dateModifCote, $cotePerso, $origineCote]);
-
 header('Location: comicsForm.php');
   exit();
 ?>

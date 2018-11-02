@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
        <head>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,35 +25,58 @@
                   <label>categorie :</label>
                   <select v-model="categorie" name="categorie">
                     <option disabled value="">Choisissez</option>
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
+                    <option>Affiche</option>
+                    <option>Blog</option>
+                    <option>Boite</option>
+                    <option>Carte</option>
+                    <option>Décoration</option>
+                    <option>Divers</option>
+                    <option>Doc</option>
+                    <option>Etiquette</option>
+                    <option>Exlibris</option>
+                    <option>Figurine</option>
+                    <option>Horlogerie</option>
+                    <option>Invitation</option>
+                    <option>Jeux/Jouets</option>
+                    <option>Livre</option>
+                    <option>Musique</option>
+                    <option>Original</option>
+                    <option>Portofolio</option>
+                    <option>Pub-PLV</option>
+                    <option>Puzzle</option>
+                    <option>Scolaire</option>
+                    <option>Sérigraphie/Litho</option>
+                    <option>Textile</option>
+                    <option>Vaiselle</option>
                   </select>
                 </div>
                 <div class="form-group">
                     <label>idDessinateur :</label>
                     <select v-model="idDessinateur" name="idDessinateur">
                       <option disabled value="">Choisissez</option>
-                      <option>A</option>
-                      <option>B</option>
-                      <option>C</option>
+                      <option>Zep</option>
+                      <option>Vince</option>
+                      <option>Chauzy</option>
+                      <option>Tebo</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>idScenariste :</label>
                     <select v-model="idScenariste" name="idScenariste">
                       <option disabled value="">Choisissez</option>
-                      <option>A</option>
-                      <option>B</option>
-                      <option>C</option>
+                      <option>Zep</option>
+                      <option>Vince</option>
+                      <option>Chauzy</option>
+                      <option>Tebo</option>
                     </select>                </div>
                 <div class="form-group">
                     <label>idColoriste :</label>
                     <select v-model="idColoriste" name="idColoriste">
                       <option disabled value="">Choisissez</option>
-                      <option>A</option>
-                      <option>B</option>
-                      <option>C</option>
+                      <option>Zep</option>
+                      <option>Vince</option>
+                      <option>Chauzy</option>
+                      <option>Tebo</option>
                     </select>                </div>
                 <div class="form-group">
                     <label>prixVente :</label>
