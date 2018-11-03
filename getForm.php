@@ -1,12 +1,6 @@
 <?php
-try
-{
- $bdd = new PDO('mysql:host=localhost;dbname=comics;charset=utf8', 'root', '');
-}
-catch (Exception $e)
-{
-   die('Erreur : ' . $e->getMessage());
-}
+include 'connection.php';
+
 
 $seriesTitre = $_POST["seriesTitre"];
 $numero = $_POST["numero"];

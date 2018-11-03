@@ -21,7 +21,7 @@ $columns = array(
 $sql_details = array(
     'user' => 'root',
     'pass' => '',
-    'db'   => 'comics',
+    'db'   => 'titeuf',
     'host' => 'localhost'
 );
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 28 oct. 2018 à 15:46
+-- Généré le :  sam. 03 nov. 2018 à 16:10
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -67,20 +67,39 @@ CREATE TABLE IF NOT EXISTS `titeuf` (
   `dateModifCote` date DEFAULT NULL,
   `origineCote` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `titeuf`
 --
 
 INSERT INTO `titeuf` (`id`, `seriesTitre`, `numero`, `albumTitre`, `categorie`, `idDessinateur`, `idScenariste`, `idColoriste`, `prixVente`, `editeur`, `editionOriginale`, `image`, `descriptif`, `reference`, `depotLegal`, `dateSortie`, `dateImpression`, `commentaire`, `image2`, `image3`, `image4`, `nbPages`, `matiere`, `aspect`, `certificat`, `numerote`, `signe`, `packaging`, `horsCommerce`, `hauteur`, `largeur`, `profondeur`, `cote`, `cotePerso`, `dateModifCote`, `origineCote`) VALUES
-(1, 'Test', 0, '', '', '0', '0', '', NULL, '', '', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, 0, NULL, ''),
-(2, 'djhgbd', 4, 'sngsl', 'A', 'B', 'C', '', NULL, '', '', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, 0, NULL, ''),
-(3, 'sddsd', 545, 'dqfhb', 'A', 'B', 'C', '', NULL, '', '', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, 0, NULL, ''),
-(4, 'mkjcv', 56, '', 'A', 'B', 'C', '', NULL, '', '', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, 0, NULL, ''),
-(5, 'sjd', 15, '', 'A', '', '', '', NULL, '', '', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', '', '', '', '', '', 0, 0, 0, 0, 0, NULL, ''),
-(18, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
-(19, 'Titeuf', 1, 'Dieu, le sexe et les bretelles', 'B', 'A', 'A', 'A', 8, 'B', 'true', '', 'Premier album', '', NULL, NULL, NULL, 'Edition estimée a 5000 ex.', '', '', '', 48, 'Papier carton', '2', 'false', 'false', 'false', '', 'false', 280, 240, 8, 300, 300, NULL, 'Ebay');
+(24, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(23, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(22, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(20, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(21, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(19, 'Titeuf', 1, 'Dieu, le sexe et les bretelles', 'Livre', 'A', 'A', 'A', 8, 'B', 'true', '', 'Premieralbum', '', NULL, NULL, NULL, 'Edition estimée a 5000 ex', '', '', '', 48, 'Papier carton', '2', 'false', 'false', 'false', '', 'false', 280, 240, 8, 300, 300, NULL, 'Ebay'),
+(25, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(26, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(27, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(28, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(29, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(30, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(31, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(32, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(33, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(34, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(35, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(36, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(37, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(38, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(39, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(40, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(41, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(42, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(43, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, ''),
+(44, '', 0, '', '', '', '', '', 0, '', 'false', '', '', '', NULL, NULL, NULL, '', '', '', '', 0, '', '', 'false', 'false', 'false', '', 'false', 0, 0, 0, 0, 0, NULL, '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
