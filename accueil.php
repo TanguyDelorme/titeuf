@@ -17,6 +17,7 @@ include 'connection.php';
     </head>
 
     <body>
+      <a href="comicsForm.php"><button>Formulaire</button></a>
       <table id="example" class="display table-bordered " style="width:100%">
                <thead>
                    <tr>
@@ -98,6 +99,10 @@ include 'connection.php';
                                 <div class="modal-body">
                                   <h2 class="text-secondary mb-0">Caractérisiques de l'ojet :</h2>
                                   <p>ID : <?php echo $id; ?></p>
+                                  <?php if(!empty($image)) echo "<p>Nom image : ".$image."</p>"; ?>
+                                  <?php if(!empty($image2)) echo "<p>Nom image 2 : ".$image2."</p>"; ?>
+                                  <?php if(!empty($image3)) echo "<p>Nom image 3 : ".$image3."</p>"; ?>
+                                  <?php if(!empty($image4)) echo "<p>Nom image 4 : ".$image4."</p>"; ?>
                                   <?php if(!empty($seriesTitre)) echo "<p>Titre de la série : ".$seriesTitre."</p>"; ?>
                                   <?php if(!empty($numero)) echo "<p>Numéro : ".$numero."</p>"; ?>
                                   <?php if(!empty($albumTitre)) echo "<p>Titre de l'album : ".$albumTitre."</p>"; ?>

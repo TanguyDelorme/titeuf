@@ -8,7 +8,8 @@
            <title>Titeuf</title>
        </head>
        <body>
-             <form action="getForm.php" method="post" id="form">
+         <a href="accueil.php"><button>Table des objets</button></a>
+             <form action="getForm.php" method="post" id="form" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>seriesTitre :</label>
                     <input type="text" placeholder="seriesTitre" class="form-control" name="seriesTitre" v-model="seriesTitre">
@@ -124,8 +125,13 @@
                 </div>
                 <div class="form-group">
                     <label>image :</label>
-                    <input type="text" placeholder="image" class="form-control" name="image" v-model="image">
+                    <input type="file" placeholder="image" class="form-control" name="image" v-model="image"/>
                 </div>
+
+                <script>
+                var filename = $('input[type=file]').val();
+                console.log(filename);
+                </script>
                 <div class="form-group">
                     <label>descriptif :</label>
                     <input type="text" placeholder="descriptif" class="form-control" name="descriptif" v-model="descriptif">
@@ -152,15 +158,15 @@
                 </div>
                 <div class="form-group">
                     <label>image2 :</label>
-                    <input type="text" placeholder="image2" class="form-control" name="image2" v-model="image2">
+                    <input type="file" placeholder="image2" class="form-control" name="image2" v-model="image2"/>
                 </div>
                 <div class="form-group">
                     <label>image3 :</label>
-                    <input type="text" placeholder="image3" class="form-control" name="image3" v-model="image3">
+                    <input type="file" placeholder="image3" class="form-control" name="image3" v-model="image3">
                 </div>
                 <div class="form-group">
                     <label>image4 :</label>
-                    <input type="text" placeholder="image4" class="form-control" name="image4" v-model="image4">
+                    <input type="file" placeholder="image4" class="form-control" name="image4" v-model="image4">
                 </div>
                 <div class="form-group">
                     <label>nbPages :</label>

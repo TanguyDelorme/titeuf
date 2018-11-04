@@ -42,7 +42,12 @@ if(isset($_POST['editionOriginale'])){
 else {
   $editionOriginale = "false";
 }
-$image = $_POST["image"];
+if ($_FILES['image']['error'] > 0) {
+  $erreur = "Erreur lors du transfert";
+}
+else{
+  $image = $_FILES['image']['name'];
+}
 $descriptif = $_POST["descriptif"];
 $reference = $_POST["reference"];
 if(isset($_POST['depotLegal'])){
@@ -64,9 +69,22 @@ else {
   $dateImpression = $_POST['dateImpression'];
 }
 $commentaire = $_POST["commentaire"];
-$image2 = $_POST["image2"];
-$image3 = $_POST["image3"];
-$image4 = $_POST["image4"];
+if ($_FILES['image2']['error'] > 0) {
+  $erreur = "Erreur lors du transfert";
+}
+else{
+  $image2 = $_FILES['image2']['name'];
+}if ($_FILES['image3']['error'] > 0) {
+  $erreur = "Erreur lors du transfert";
+}
+else{
+  $image3 = $_FILES['image3']['name'];
+}if ($_FILES['image4']['error'] > 0) {
+  $erreur = "Erreur lors du transfert";
+}
+else{
+  $image4 = $_FILES['image4']['name'];
+}
 $nbPages = $_POST["nbPages"];
 $matiere = $_POST["matiere"];
 $aspect = $_POST["aspect"];
