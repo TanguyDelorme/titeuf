@@ -86,9 +86,36 @@
                     <label>editeur :</label>
                     <select v-model="editeur" name="editeur">
                       <option disabled value="">Choisissez</option>
-                      <option>A</option>
-                      <option>B</option>
-                      <option>C</option>
+                      <option>Atoz</option>
+                      <option>B.D. Club de Genève</option>
+                      <option>Christian Desbois Editions</option>
+                      <option>Démons et Merveilles</option>
+                      <option>Drozophile</option>
+                      <option>Dupuis</option>
+                      <option>Fest'Off</option>
+                      <option>Fondation Suisse d'Aide aux Victimes de Mines Antipersonnel</option>
+                      <option>Glénat</option>
+                      <option>GSSA</option>
+                      <option>Hallmark</option>
+                      <option>Hallmark - La Carterie</option>
+                      <option>Houbba</option>
+                      <option>Kesselring</option>
+                      <option>Leblon-Delienne</option>
+                      <option>L'illustré</option>
+                      <option>MB</option>
+                      <option>Muttpop</option>
+                      <option>Paléo Festival de Nyon</option>
+                      <option>Plastoy</option>
+                      <option>Poésie vivante</option>
+                      <option>Pro Junentute</option>
+                      <option>Raspoutine</option>
+                      <option>Rue de Sèvres</option>
+                      <option>Sac Ados Médias</option>
+                      <option>Sauve qui peut</option>
+                      <option>Stickers for ever</option>
+                      <option>Swof</option>
+                      <option>Trajets</option>
+                      <option>Vents d'Ouest</option>
                     </select>
                 </div>
                 <div class="form-group">
