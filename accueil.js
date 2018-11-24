@@ -4,7 +4,8 @@ $(document).ready(function() {
   $('#example tfoot th').each(function() {
     let title = $('#example thead th').eq( $(this).index()).text();
     modif = title.indexOf("Modifier");
-    if(modif == -1){
+    supp = title.indexOf("Supprimer");
+    if(modif == -1 && supp == -1){
       $(this).html('<input style="width:100%" type="text" placeholder="Search '+title+'" />');
     }
     else{
@@ -26,9 +27,16 @@ $(document).ready(function() {
         {
           "render" : function(data,type,row){
             var inputid = row[0];
-            return '<a href="#add'+ inputid +'" data-toggle="modal"><button type="button" class="btn btn-success btn-sm">Modifier</span></button></a>'
+            return '<a href="#update'+ inputid +'" data-toggle="modal" style="display: flex;justify-content: space-around;"><button type="button" class="btn btn-success btn-sm"><i class="far fa-edit"></i></button></a>'
           },
           "targets" : 4
+        },
+        {
+          "render" : function(data,type,row){
+            var inputid = row[0];
+            return '<a href="#delete'+ inputid  +'" data-toggle="modal" style="display: flex;justify-content: space-around;"><button type="button" class="btn btn-danger btn-sm" ><i class="fas fa-trash-alt"></i>  </button></a>'
+          },
+          "targets" : 5
         }
       ],
         //hide search sign

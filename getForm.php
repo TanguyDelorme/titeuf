@@ -42,8 +42,8 @@ if(isset($_POST['editionOriginale'])){
 else {
   $editionOriginale = "false";
 }
-if ($_FILES['image']['error'] > 0) {
-  $erreur = "Erreur lors du transfert";
+if (!isset($_FILES['image']['name'])) {
+  $image = "";
 }
 else{
   $image = $_FILES['image']['name'];
@@ -69,18 +69,20 @@ else {
   $dateImpression = $_POST['dateImpression'];
 }
 $commentaire = $_POST["commentaire"];
-if ($_FILES['image2']['error'] > 0) {
-  $erreur = "Erreur lors du transfert";
+if (!isset($_FILES['image2']['name'])) {
+  $image2 = "";
 }
 else{
   $image2 = $_FILES['image2']['name'];
-}if ($_FILES['image3']['error'] > 0) {
-  $erreur = "Erreur lors du transfert";
+}
+if (!isset($_FILES['image3']['name'])) {
+  $image3 = "";
 }
 else{
   $image3 = $_FILES['image3']['name'];
-}if ($_FILES['image4']['error'] > 0) {
-  $erreur = "Erreur lors du transfert";
+}
+if (!isset($_FILES['image4']['name'])) {
+  $image4 = "";
 }
 else{
   $image4 = $_FILES['image4']['name'];
