@@ -106,13 +106,13 @@ include 'connection.php';
                                     <label>Nom image 3 : </label><input value="<?php if(!empty($image3)) {echo $image3;}else{echo "";} ?>" type='file' name='image3' class='form-control'>
                                     <label>Nom image 4 : </label><input value="<?php if(!empty($image4)) {echo $image4;}else{echo "";} ?>" type='file' name='image4' class='form-control'>
                                     <label>Titre de la série : </label><input value="<?php if(!empty($seriesTitre)) {echo $seriesTitre;}else{echo "";} ?>" type='text' name='seriesTitre' class='form-control'>
-                                    <label>Numéro : </label><input value="<?php if(!empty($numero)) {echo $numero;}else{echo "";} ?>" type='number' name='numero' class='form-control'>
+                                    <label>Numéro : </label><input value="<?php if(!empty($numero)) {echo $numero;}else{echo 0;} ?>" type='number' name='numero' class='form-control'>
                                     <label>Titre de l'album : </label><input value="<?php if(!empty($albumTitre)) {echo $albumTitre;}else{echo "";} ?>" type='text' name='albumTitre' class='form-control'>
                                     <label>Catégorie : </label><input value="<?php if(!empty($categorie)) {echo $categorie;}else{echo "";} ?>" type='text' name='categorie' class='form-control'>
                                     <label>ID du dessinateur : </label><input value="<?php if(!empty($idDessinateur)) {echo $idDessinateur;}else{echo "";} ?>" type='text' name='idDessinateur' class='form-control'>
                                     <label>ID du scénariste : </label><input value="<?php if(!empty($idScenariste)) {echo $idScenariste;}else{echo "";} ?>" type='text' name='idScenariste' class='form-control'>
                                     <label>ID du coloriste : </label><input value="<?php if(!empty($idColoriste)) {echo $idColoriste;}else{echo "";} ?>" type='text' name='idColoriste' class='form-control'>
-                                    <label>Prix de vente : </label><input value="<?php if(!empty($prixVente)) {echo $prixVente;}else{echo "";} ?>" type='number' name='prixVente' class='form-control'>
+                                    <label>Prix de vente : </label><input value="<?php if(!empty($prixVente)) {echo $prixVente;}else{echo 0;} ?>" type='number' name='prixVente' class='form-control'>
                                     <label>Editeur : </label><input value="<?php if(!empty($editeur)) {echo $editeur;}else{echo "";} ?>" type='text' name='editeur' class='form-control'>
                                     <label>Edition originale : </label><input value="<?php if(!empty($editionOriginale)) {echo $editionOriginale;}else{echo "";} ?>" type='text' name='editionOriginale' class='form-control'>
                                     <label>Descriptif : </label><input value="<?php if(!empty($descriptif)) {echo $descriptif;}else{echo "";} ?>"  type='text' name='descriptif' class='form-control'>
@@ -121,7 +121,7 @@ include 'connection.php';
                                     <label>Date de sortie : </label><input value="<?php if($dateSortie != NULL) {echo $dateSortie;}else{echo "";} ?>" type='date' name='dateSortie' class='form-control'>
                                     <label>Date d'impression : </label><input value="<?php if($dateImpression != NULL) {echo $dateImpression;}else{echo "";} ?>" type='date' name='dateImpression' class='form-control'>
                                     <label>Commentaire : </label><input value="<?php if(!empty($commentaire)) {echo $commentaire;}else{echo "";} ?>" type='text' name='commentaire' class='form-control'>
-                                    <label>Nombre de pages : </label><input value="<?php if(!empty($nbPages)) {echo $nbPages;}else{echo "";} ?>" type='number' name='nbPages' class='form-control'>
+                                    <label>Nombre de pages : </label><input value="<?php if(!empty($nbPages)) {echo $nbPages;}else{echo 0;} ?>" type='number' name='nbPages' class='form-control'>
                                     <label>Matière : </label><input value="<?php if(!empty($matiere)) {echo $matiere;}else{echo "";} ?>" type='text' name='matiere' class='form-control'>
                                     <label>Certificat : </label><input value="<?php if($certificat!= "false") {echo $certificat;}else{echo "";} ?>" type='text' name='certificat' class='form-control'>
                                     <label>Aspect : </label><input value="<?php if(!empty($aspect)) {echo $aspect;}else{echo "";} ?>" type='text' name='aspect' class='form-control'>
@@ -129,13 +129,13 @@ include 'connection.php';
                                     <label>Numeroté : </label><input value="<?php if($numerote != "false") {echo $numerote;}else{echo "";} ?>" type='text' name='numerote' class='form-control'>
                                     <label>Packaging : </label><input value="<?php if(!empty($packaging)) {echo $packaging;}else{echo "";} ?>" type='text' name='packaging' class='form-control'>
                                     <label>Hors commerce : </label><input value="<?php if($horsCommerce != "false") {echo $horsCommerce;}else{echo "";} ?>" type='text' name='horsCommerce' class='form-control'>
-                                    <label>Hauteur : </label><input value="<?php if(!empty($hauteur)) {echo $hauteur;}else{echo "";} ?>" type='number' name='hauteur' class='form-control'>
-                                    <label>Largeur : </label><input value="<?php if(!empty($largeur)) {echo $largeur;}else{echo "";} ?>" type='number' name='largeur' class='form-control'>
-                                    <label>Profondeur : </label><input value="<?php if(!empty($profondeur)) {echo $profondeur;}else{echo "";} ?>" type='number' name='profondeur' class='form-control'>
-                                    <label>Prix de vente : </label><input value="<?php if(!empty($cote)) {echo $cote;}else{echo "";} ?>" type='number' name='cote' class='form-control'>
+                                    <label>Hauteur : </label><input value="<?php if(!empty($hauteur)) {echo $hauteur;}else{echo 0;} ?>" type='number' name='hauteur' class='form-control'>
+                                    <label>Largeur : </label><input value="<?php if(!empty($largeur)) {echo $largeur;}else{echo 0;} ?>" type='number' name='largeur' class='form-control'>
+                                    <label>Profondeur : </label><input value="<?php if(!empty($profondeur)) {echo $profondeur;}else{echo 0;} ?>" type='number' name='profondeur' class='form-control'>
+                                    <label>Prix de vente : </label><input value="<?php if(!empty($cote)) {echo $cote;}else{echo 0;} ?>" type='number' name='cote' class='form-control'>
                                     <label>Date de modification de la cote : </label><input value="<?php if($dateModifCote != NULL) {echo $dateModifCote;}else{echo "";} ?>" type='date' name='dateModifCote' class='form-control'>
-                                    <label>Cote personnelle : </label><input value="<?php if(!empty($cotePerso)) {echo $cotePerso;}else{echo "";} ?>" type='number' name='cotePerso' class='form-control'>
-                                    <label>Origine de la cote : </label><input value="<?php if(!empty($origineCote)) {echo $origineCote;}else{echo "";} ?>" type='number' name='origineCote' class='form-control'>
+                                    <label>Cote personnelle : </label><input value="<?php if(!empty($cotePerso)) {echo $cotePerso;}else{echo 0;} ?>" type='number' name='cotePerso' class='form-control'>
+                                    <label>Origine de la cote : </label><input value="<?php if(!empty($origineCote)) {echo $origineCote;}else{echo 0;} ?>" type='number' name='origineCote' class='form-control'>
                                     <input value="<?php echo $id?>" type="hidden" class="form-control" name="id">
                                     <br>
                                  <button type="submit" class="btn btn-warning modif" style="color:white;width:15%;margin-left:40%"><i class="far fa-edit"></i> Modifier</button>
