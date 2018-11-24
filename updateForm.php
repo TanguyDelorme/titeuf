@@ -238,5 +238,5 @@ dateModifCote = :dateModifCote, cotePerso = :cotePerso, origineCote = :origineCo
     	'origineCote' => $origineCote,
 ));
 
-/*header('Location: accueil.php');
-  exit();*/
+header('Location: accueil.php');
+  exit();
