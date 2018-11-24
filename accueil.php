@@ -124,7 +124,7 @@ include 'connection.php';
                                     <label>Nombre de pages : </label><input value="<?php if(!empty($nbPages)) {echo $nbPages;}else{echo "";} ?>" type='number' name='nbPages' class='form-control'>
                                     <label>Matière : </label><input value="<?php if(!empty($matiere)) {echo $matiere;}else{echo "";} ?>" type='text' name='matiere' class='form-control'>
                                     <label>Certificat : </label><input value="<?php if($certificat!= "false") {echo $certificat;}else{echo "";} ?>" type='text' name='certificat' class='form-control'>
-                                    <label>Aspect : </label><input value="<?php if(!empty($aspect)) {echo $aspect;}else{echo "";} ?>" type='text' name='$aspect' class='form-control'>
+                                    <label>Aspect : </label><input value="<?php if(!empty($aspect)) {echo $aspect;}else{echo "";} ?>" type='text' name='aspect' class='form-control'>
                                     <label>Signe : </label><input value="<?php if($signe != "false") {echo $signe;}else{echo "";} ?>" type='text' name='signe' class='form-control'>
                                     <label>Numeroté : </label><input value="<?php if($numerote != "false") {echo $numerote;}else{echo "";} ?>" type='text' name='numerote' class='form-control'>
                                     <label>Packaging : </label><input value="<?php if(!empty($packaging)) {echo $packaging;}else{echo "";} ?>" type='text' name='packaging' class='form-control'>
