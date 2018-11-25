@@ -191,7 +191,7 @@ include 'connection.php';
                                       <option <?php if($categorie == "Trajets")echo "selected"; ?>>Trajets</option>
                                       <option <?php if($categorie == "Vents d'Ouest")echo "selected"; ?>>Vents d'Ouest</option>
                                     </select>
-                                    <label>Edition originale : </label><input checked="<?php if($editionOriginale == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='editionOriginale' class='form-check'><br><?php echo $editionOriginale?>
+                                    <label>Edition originale : </label><input <?php if($editionOriginale == "true")echo "checked"; ?> type='checkbox' name='editionOriginale' class='form-check'><br><?php echo $editionOriginale?>
                                     <label>Descriptif : </label><input value="<?php if(!empty($descriptif)) {echo $descriptif;}else{echo "";} ?>"  type='text' name='descriptif' class='form-control'>
                                     <label>Référence : </label><input value="<?php if(!empty($reference)) {echo $reference;}else{echo "";} ?>" type='text' name='reference' class='form-control'>
                                     <label>Dépot légal : </label><input value="<?php if($depotLegal != NULL) {echo $depotLegal;}else{echo "";} ?>" type='date' name='depotLegal' class='form-control'>
@@ -200,12 +200,12 @@ include 'connection.php';
                                     <label>Commentaire : </label><input value="<?php if(!empty($commentaire)) {echo $commentaire;}else{echo "";} ?>" type='text' name='commentaire' class='form-control'>
                                     <label>Nombre de pages : </label><input value="<?php if(!empty($nbPages)) {echo $nbPages;}else{echo 0;} ?>" type='number' name='nbPages' class='form-control'>
                                     <label>Matière : </label><input value="<?php if(!empty($matiere)) {echo $matiere;}else{echo "";} ?>" type='text' name='matiere' class='form-control'>
-                                    <label>Certificat : </label><input checked="<?php if($certificat == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='certificat' class='form-check'><br>
+                                    <label>Certificat : </label><input <?php if($certificat == "true")echo "checked"; ?> type='checkbox' name='certificat' class='form-check'><br>
                                     <label>Aspect : </label><input value="<?php if(!empty($aspect)) {echo $aspect;}else{echo "";} ?>" type='text' name='aspect' class='form-control'>
-                                    <label>Signe : </label><input checked="<?php if($signe == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='signe' class='form-check'><br>
-                                    <label>Numeroté : </label><input checked="<?php if($numerote == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='numerote' class='form-check'><br>
+                                    <label>Signe : </label><input <?php if($signe == "true")echo "checked"; ?> type='checkbox' name='signe' class='form-check'><br>
+                                    <label>Numeroté : </label><input <?php if($numerote == "true")echo "checked"; ?> type='checkbox' name='numerote' class='form-check'><br>
                                     <label>Packaging : </label><input value="<?php if(!empty($packaging)) {echo $packaging;}else{echo "";} ?>" type='text' name='packaging' class='form-control'>
-                                    <label>Hors commerce : </label><input checked="<?php if($horsCommerce == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='horsCommerce' class='form-check'><br>
+                                    <label>Hors commerce : </label><input <?php if($horsCommerce == "true")echo "checked"; ?> type='checkbox' name='horsCommerce' class='form-check'><br>
                                     <label>Hauteur : </label><input value="<?php if(!empty($hauteur)) {echo $hauteur;}else{echo 0;} ?>" type='number' name='hauteur' class='form-control'>
                                     <label>Largeur : </label><input value="<?php if(!empty($largeur)) {echo $largeur;}else{echo 0;} ?>" type='number' name='largeur' class='form-control'>
                                     <label>Profondeur : </label><input value="<?php if(!empty($profondeur)) {echo $profondeur;}else{echo 0;} ?>" type='number' name='profondeur' class='form-control'>

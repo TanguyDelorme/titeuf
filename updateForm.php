@@ -162,9 +162,11 @@ else {
 }
 if(isset($_POST['signe'])){
   $signe = "true";
+  echo $signe;
 }
 else {
   $signe = "false";
+  echo $signe;
 }
 if(!isset($_POST['packaging'])){
   $packaging = "";
@@ -240,5 +242,5 @@ dateModifCote = :dateModifCote, cotePerso = :cotePerso, origineCote = :origineCo
     	'origineCote' => $origineCote,
 ));
 
-/*header('Location: accueil.php');
-  exit();*/
+header('Location: accueil.php');
+  exit();
