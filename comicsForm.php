@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                   <label>categorie :</label>
-                  <select v-model="categorie" name="categorie">
+                  <select  name="categorie">
                     <option disabled value="">Choisissez</option>
                     <option>Affiche</option>
                     <option>Blog</option>
@@ -48,10 +48,10 @@
                     <option>Scolaire</option>
                     <option>Sérigraphie/Litho</option>
                     <option>Textile</option>
-                    <option>Vaiselle</option>
+                    <option>Vaisselle</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>idDessinateur :</label>
                     <select v-model="idDessinateur" name="idDessinateur">
                       <option disabled value="">Choisissez</option>

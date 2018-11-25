@@ -66,9 +66,11 @@ else{
 }
 if(isset($_POST['editionOriginale'])){
   $editionOriginale = "true";
+  echo $editionOriginale;
 }
 else {
   $editionOriginale = "false";
+  echo $editionOriginale;
 }
 if(!isset($_POST['image'])){
   $image = "";
@@ -238,5 +240,5 @@ dateModifCote = :dateModifCote, cotePerso = :cotePerso, origineCote = :origineCo
     	'origineCote' => $origineCote,
 ));
 
-header('Location: accueil.php');
-  exit();
+/*header('Location: accueil.php');
+  exit();*/

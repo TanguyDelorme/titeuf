@@ -108,13 +108,90 @@ include 'connection.php';
                                     <label>Titre de la série : </label><input value="<?php if(!empty($seriesTitre)) {echo $seriesTitre;}else{echo "";} ?>" type='text' name='seriesTitre' class='form-control'>
                                     <label>Numéro : </label><input value="<?php if(!empty($numero)) {echo $numero;}else{echo 0;} ?>" type='number' name='numero' class='form-control'>
                                     <label>Titre de l'album : </label><input value="<?php if(!empty($albumTitre)) {echo $albumTitre;}else{echo "";} ?>" type='text' name='albumTitre' class='form-control'>
-                                    <label>Catégorie : </label><input value="<?php if(!empty($categorie)) {echo $categorie;}else{echo "";} ?>" type='text' name='categorie' class='form-control'>
-                                    <label>ID du dessinateur : </label><input value="<?php if(!empty($idDessinateur)) {echo $idDessinateur;}else{echo "";} ?>" type='text' name='idDessinateur' class='form-control'>
-                                    <label>ID du scénariste : </label><input value="<?php if(!empty($idScenariste)) {echo $idScenariste;}else{echo "";} ?>" type='text' name='idScenariste' class='form-control'>
-                                    <label>ID du coloriste : </label><input value="<?php if(!empty($idColoriste)) {echo $idColoriste;}else{echo "";} ?>" type='text' name='idColoriste' class='form-control'>
+                                    <label>Catégorie : </label>
+                                    <select  class="form-control" name="categorie">
+                                      <option <?php if($categorie == "Affiche")echo "selected"; ?>>Affiche</option>
+                                      <option <?php if($categorie == "Blog")echo "selected"; ?>>Blog</option>
+                                      <option <?php if($categorie == "Boite")echo "selected"; ?>>Boite</option>
+                                      <option <?php if($categorie == "Carte")echo "selected"; ?>>Carte</option>
+                                      <option <?php if($categorie == "Décoration")echo "selected"; ?>>Décoration</option>
+                                      <option <?php if($categorie == "Divers")echo "selected"; ?>>Divers</option>
+                                      <option <?php if($categorie == "Doc")echo "selected"; ?>>Doc</option>
+                                      <option <?php if($categorie == "Etiquette")echo "selected"; ?>>Etiquette</option>
+                                      <option <?php if($categorie == "Exlibris")echo "selected"; ?>>Exlibris</option>
+                                      <option <?php if($categorie == "Figurine")echo "selected"; ?>>Figurine</option>
+                                      <option <?php if($categorie == "Horlogerie")echo "selected"; ?>>Horlogerie</option>
+                                      <option <?php if($categorie == "Invitation")echo "selected"; ?>>Invitation</option>
+                                      <option <?php if($categorie == "Jeux/Jouets")echo "selected"; ?>>Jeux/Jouets</option>
+                                      <option <?php if($categorie == "Livre")echo "selected"; ?>>Livre</option>
+                                      <option <?php if($categorie == "Musique")echo "selected"; ?>>Musique</option>
+                                      <option <?php if($categorie == "Original")echo "selected"; ?>>Original</option>
+                                      <option <?php if($categorie == "Portofolio")echo "selected"; ?>>Portofolio</option>
+                                      <option <?php if($categorie == "Pub-PLV")echo "selected"; ?>>Pub-PLV</option>
+                                      <option <?php if($categorie == "Puzzle")echo "selected"; ?>>Puzzle</option>
+                                      <option <?php if($categorie == "Scolaire")echo "selected"; ?>>Scolaire</option>
+                                      <option <?php if($categorie == "Sérigraphie/Litho")echo "selected"; ?>>Sérigraphie/Litho</option>
+                                      <option <?php if($categorie == "Textile")echo "selected"; ?>>Textile</option>
+                                      <option <?php if($categorie == "Vaisselle")echo "selected"; ?>>Vaisselle</option>
+                                    </select>
+                                    <label>ID du dessinateur : </label>
+                                    <select class="form-control" name="idDessinateur">
+                                      <option <?php if($categorie == "Zep")echo "selected"; ?>>Zep</option>
+                                      <option <?php if($categorie == "Vince")echo "selected"; ?>>Vince</option>
+                                      <option <?php if($categorie == "Chauzy")echo "selected"; ?>>Chauzy</option>
+                                      <option <?php if($categorie == "Tebo")echo "selected"; ?>>Tebo</option>
+                                    </select>
+                                    <label>ID du scénariste : </label>
+                                    <select class="form-control" name="idScenariste">
+                                      <option <?php if($categorie == "Zep")echo "selected"; ?>>Zep</option>
+                                      <option <?php if($categorie == "Vince")echo "selected"; ?>>Vince</option>
+                                      <option <?php if($categorie == "Chauzy")echo "selected"; ?>>Chauzy</option>
+                                      <option <?php if($categorie == "Tebo")echo "selected"; ?>>Tebo</option>
+                                    </select>
+                                    <label>ID du coloriste : </label>
+                                    <select class="form-control" name="idColoriste">
+                                      <?php if($categorie == "")echo "<option disabled selected>Choisissez</option>" ?>
+                                      <option <?php if($categorie == "Zep")echo "selected"; ?>>Zep</option>
+                                      <option <?php if($categorie == "Vince")echo "selected"; ?>>Vince</option>
+                                      <option <?php if($categorie == "Chauzy")echo "selected"; ?>>Chauzy</option>
+                                      <option <?php if($categorie == "Tebo")echo "selected"; ?>>Tebo</option>
+                                    </select>
                                     <label>Prix de vente : </label><input value="<?php if(!empty($prixVente)) {echo $prixVente;}else{echo 0;} ?>" type='number' name='prixVente' class='form-control'>
-                                    <label>Editeur : </label><input value="<?php if(!empty($editeur)) {echo $editeur;}else{echo "";} ?>" type='text' name='editeur' class='form-control'>
-                                    <label>Edition originale : </label><input value="<?php if(!empty($editionOriginale)) {echo $editionOriginale;}else{echo "";} ?>" type='text' name='editionOriginale' class='form-control'>
+                                    <label>Editeur : </label>
+                                    <select class="form-control" name="editeur">
+                                      <?php if($categorie == "")echo "<option disabled selected>Choisissez</option>" ?>
+                                      <option <?php if($categorie == "Atoz")echo "selected"; ?>>Atoz</option>
+                                      <option <?php if($categorie == "B.D. Club de Genève")echo "selected"; ?>>B.D. Club de Genève</option>
+                                      <option <?php if($categorie == "Christian Desbois Editions")echo "selected"; ?>>Christian Desbois Editions</option>
+                                      <option <?php if($categorie == "Démons et Merveilles")echo "selected"; ?>>Démons et Merveilles</option>
+                                      <option <?php if($categorie == "Drozophile")echo "selected"; ?>>Drozophile</option>
+                                      <option <?php if($categorie == "Dupuis")echo "selected"; ?>>Dupuis</option>
+                                      <option <?php if($categorie == "Fest'Off")echo "selected"; ?>>Fest'Off</option>
+                                      <option <?php if($categorie == "Fondation Suisse d'Aide aux Victimes de Mines Antipersonnel")echo "selected"; ?>>Fondation Suisse d'Aide aux Victimes de Mines Antipersonnel</option>
+                                      <option <?php if($categorie == "Glénat")echo "selected"; ?>>Glénat</option>
+                                      <option <?php if($categorie == "GSSA")echo "selected"; ?>>GSSA</option>
+                                      <option <?php if($categorie == "Hallmark")echo "selected"; ?>>Hallmark</option>
+                                      <option <?php if($categorie == "Hallmark - La Carterie")echo "selected"; ?>>Hallmark - La Carterie</option>
+                                      <option <?php if($categorie == "Houbba")echo "selected"; ?>>Houbba</option>
+                                      <option <?php if($categorie == "Kesselring")echo "selected"; ?>>Kesselring</option>
+                                      <option <?php if($categorie == "Leblon-Delienne")echo "selected"; ?>>Leblon-Delienne</option>
+                                      <option <?php if($categorie == "L'illustré")echo "selected"; ?>>L'illustré</option>
+                                      <option <?php if($categorie == "MB")echo "selected"; ?>>MB</option>
+                                      <option <?php if($categorie == "Muttpop")echo "selected"; ?>>Muttpop</option>
+                                      <option <?php if($categorie == "Paléo Festival de Nyon")echo "selected"; ?>>Paléo Festival de Nyon</option>
+                                      <option <?php if($categorie == "Plastoy")echo "selected"; ?>>Plastoy</option>
+                                      <option <?php if($categorie == "Poésie vivante")echo "selected"; ?>>Poésie vivante</option>
+                                      <option <?php if($categorie == "Pro Junentute")echo "selected"; ?>>Pro Junentute</option>
+                                      <option <?php if($categorie == "Raspoutine")echo "selected"; ?>>Raspoutine</option>
+                                      <option <?php if($categorie == "Rue de Sèvres")echo "selected"; ?>>Rue de Sèvres</option>
+                                      <option <?php if($categorie == "Sac Ados Médias")echo "selected"; ?>>Sac Ados Médias</option>
+                                      <option <?php if($categorie == "Sauve qui peut")echo "selected"; ?>>Sauve qui peut</option>
+                                      <option <?php if($categorie == "Stickers for ever")echo "selected"; ?>>Stickers for ever</option>
+                                      <option <?php if($categorie == "Swof")echo "selected"; ?>>Swof</option>
+                                      <option <?php if($categorie == "Trajets")echo "selected"; ?>>Trajets</option>
+                                      <option <?php if($categorie == "Vents d'Ouest")echo "selected"; ?>>Vents d'Ouest</option>
+                                    </select>
+                                    <label>Edition originale : </label><input checked="<?php if($editionOriginale == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='editionOriginale' class='form-check'><br><?php echo $editionOriginale?>
                                     <label>Descriptif : </label><input value="<?php if(!empty($descriptif)) {echo $descriptif;}else{echo "";} ?>"  type='text' name='descriptif' class='form-control'>
                                     <label>Référence : </label><input value="<?php if(!empty($reference)) {echo $reference;}else{echo "";} ?>" type='text' name='reference' class='form-control'>
                                     <label>Dépot légal : </label><input value="<?php if($depotLegal != NULL) {echo $depotLegal;}else{echo "";} ?>" type='date' name='depotLegal' class='form-control'>
@@ -123,12 +200,12 @@ include 'connection.php';
                                     <label>Commentaire : </label><input value="<?php if(!empty($commentaire)) {echo $commentaire;}else{echo "";} ?>" type='text' name='commentaire' class='form-control'>
                                     <label>Nombre de pages : </label><input value="<?php if(!empty($nbPages)) {echo $nbPages;}else{echo 0;} ?>" type='number' name='nbPages' class='form-control'>
                                     <label>Matière : </label><input value="<?php if(!empty($matiere)) {echo $matiere;}else{echo "";} ?>" type='text' name='matiere' class='form-control'>
-                                    <label>Certificat : </label><input value="<?php if($certificat!= "false") {echo $certificat;}else{echo "";} ?>" type='text' name='certificat' class='form-control'>
+                                    <label>Certificat : </label><input checked="<?php if($certificat == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='certificat' class='form-check'><br>
                                     <label>Aspect : </label><input value="<?php if(!empty($aspect)) {echo $aspect;}else{echo "";} ?>" type='text' name='aspect' class='form-control'>
-                                    <label>Signe : </label><input value="<?php if($signe != "false") {echo $signe;}else{echo "";} ?>" type='text' name='signe' class='form-control'>
-                                    <label>Numeroté : </label><input value="<?php if($numerote != "false") {echo $numerote;}else{echo "";} ?>" type='text' name='numerote' class='form-control'>
+                                    <label>Signe : </label><input checked="<?php if($signe == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='signe' class='form-check'><br>
+                                    <label>Numeroté : </label><input checked="<?php if($numerote == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='numerote' class='form-check'><br>
                                     <label>Packaging : </label><input value="<?php if(!empty($packaging)) {echo $packaging;}else{echo "";} ?>" type='text' name='packaging' class='form-control'>
-                                    <label>Hors commerce : </label><input value="<?php if($horsCommerce != "false") {echo $horsCommerce;}else{echo "";} ?>" type='text' name='horsCommerce' class='form-control'>
+                                    <label>Hors commerce : </label><input checked="<?php if($horsCommerce == "true") {echo "checked";}else{echo "unchecked";} ?>" type='checkbox' name='horsCommerce' class='form-check'><br>
                                     <label>Hauteur : </label><input value="<?php if(!empty($hauteur)) {echo $hauteur;}else{echo 0;} ?>" type='number' name='hauteur' class='form-control'>
                                     <label>Largeur : </label><input value="<?php if(!empty($largeur)) {echo $largeur;}else{echo 0;} ?>" type='number' name='largeur' class='form-control'>
                                     <label>Profondeur : </label><input value="<?php if(!empty($profondeur)) {echo $profondeur;}else{echo 0;} ?>" type='number' name='profondeur' class='form-control'>
