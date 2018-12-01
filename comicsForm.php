@@ -125,7 +125,7 @@
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>image :</label>
-                    <input type="file" placeholder="image" class="form-control" name="image" v-on="image"/>
+                    <input type="file" placeholder="image" class="form-control-file" name="image" v-on="image"/>
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>descriptif :</label>
@@ -153,15 +153,15 @@
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>image2 :</label>
-                    <input type="file" placeholder="image2" class="form-control" name="image2" v-on="image2"/>
+                    <input type="file" placeholder="image2" class="form-control-file" name="image2" v-on="image2"/>
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>image3 :</label>
-                    <input type="file" placeholder="image3" class="form-control" name="image3" v-on="image3">
+                    <input type="file" placeholder="image3" class="form-control-file" name="image3" v-on="image3">
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>image4 :</label>
-                    <input type="file" placeholder="image4" class="form-control" name="image4" v-on="image4">
+                    <input type="file" placeholder="image4" class="form-control-file" name="image4" v-on="image4">
                 </div>
                 <div class="form-group col-xl-3 col-md-4 col-sm-6 mb-4">
                     <label>nbPages :</label>

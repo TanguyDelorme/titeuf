@@ -108,6 +108,7 @@ if($_POST['dateImpression'] == NULL){
 }
 else {
   $dateImpression = $_POST['dateImpression'];
+  echo $dateImpression;
 }
 $commentaire = $_POST["commentaire"];
 if(!isset($_POST['image2'])){
@@ -185,7 +186,7 @@ $largeur = $_POST["largeur"];
 $profondeur = $_POST["profondeur"];
 $cote = $_POST["cote"];
 $cotePerso = $_POST["cotePerso"];
-if($_POST['dateImpression'] == NULL){
+if($_POST['dateModifCote'] == NULL){
   $dateModifCote = NULL;
 }
 else {

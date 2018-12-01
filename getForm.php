@@ -47,6 +47,7 @@ if (!isset($_FILES['image']['name'])) {
 }
 else{
   $image = $_FILES['image']['name'];
+  echo $image;
 }
 $descriptif = $_POST["descriptif"];
 $reference = $_POST["reference"];
